@@ -12,6 +12,7 @@
 .timeBox .heart {
   animation: pulse 2s infinite;
 }
+
 /* Responsive styles */
 @media (max-width: 480px) {
   .title {

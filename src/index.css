@@ -12,3 +12,19 @@
 .timeBox .heart {
   animation: pulse 2s infinite;
 }
+/* Responsive styles */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .value {
+    font-size: 1.5rem;
+  }
+  .label {
+    font-size: 0.7rem;
+  }
+  .time-box {
+    padding: 10px;
+    min-width: 60px;
+  }
+}

@@ -9,12 +9,12 @@
   }
 }
 
-.timeBox .heart {
+/* .timeBox .heart {
   animation: pulse 2s infinite;
 }
 
 /* Responsive styles */
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
   .title {
     font-size: 1.5rem;
   }
@@ -27,5 +27,74 @@
   .time-box {
     padding: 10px;
     min-width: 60px;
+  }
+} */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-container {
+  text-align: center;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  max-width: 90%;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #b30059;
+  margin-bottom: 0.5em;
+}
+
+.time-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.time-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1em;
+  min-width: 60px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.time-box .value {
+  font-size: 1.5rem;
+  color: #e60073;
+  font-weight: bold;
+}
+
+.time-box .label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2rem;
+  }
+  .time-box {
+    padding: 0.8em;
+    min-width: 50px;
+  }
+  .time-box .value {
+    font-size: 1.2rem;
+  }
+  .time-box .label {
+    font-size: 0.8rem;
   }
 }
